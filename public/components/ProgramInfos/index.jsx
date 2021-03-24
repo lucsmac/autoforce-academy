@@ -5,7 +5,7 @@ export function ProgramInfos() {
     <div>
       <div className={`${styles.requirements} container`}>
         <div className={styles.requirementsContent}>
-          <h2 class="contentTitle">Pré-requisitos</h2>
+          <h2 className="contentTitle">Pré-requisitos</h2>
           <ul className={styles.topicsList}>
             <li>Cursando Ciência da Computação, Engenharia da  Computação, Análise de Sistemas ou áreas afins;</li>
             <li>Conhecimento básico em front-end e back-end;</li>
@@ -17,7 +17,7 @@ export function ProgramInfos() {
       </div>
 
       <div className={`${styles.methodology} container`}>
-        <h2 class="contentTitle">Metodologia</h2>
+        <h2 className="contentTitle">Metodologia</h2>
         <ul className={styles.topicsList}>
           <li>Aprendizado com base em projetos práticos e reais (Challenge Based Learning (CBL));</li>
           <li>Avaliações em ciclos de 3 meses;</li>
@@ -30,9 +30,9 @@ export function ProgramInfos() {
       </div>
 
       <div className={`${styles.modules} container`}>
-        <div class="content">
+        <div class={styles.content}>
           <div>
-            <h2 class="contentTitle">Módulos</h2>
+            <h2 className="contentTitle">Módulos</h2>
             <ul>
               <li><b>Módulo I - </b> Conceitos básicos de desenvolvimento web</li>
               <li><b>Módulo II - </b> Front-end</li>
@@ -40,7 +40,7 @@ export function ProgramInfos() {
             </ul>
           </div>
           <div className={styles.cronogram}>
-            <h2 class="contentTitle">Cronograma</h2>
+            <h2 className="contentTitle">Cronograma</h2>
             <ul>
               <li><b>Módulo I - </b> Semanas 1 a 3</li>
               <li><b>Módulo II - </b> Semanas 4 a 15</li>
@@ -54,7 +54,7 @@ export function ProgramInfos() {
         <div class="content">
           <h2 class="contentTitle">Se inscreva!</h2>
           <p class="contentText">Quer fazer parte da nova geração de desenvolvedores do Nordeste? Se inscreva no nosso programa e boa sorte!</p>
-          <div class="afBtn">
+          <div className={`${styles.afBtn} afBtn`}>
             <a href="https://portal.kenoby.com/autoforce/cadastrar/604a7d73de8588149f1d496b?1=1&utm_source=website">Quero participar</a>
           </div>
         </div>

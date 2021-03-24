@@ -1,0 +1,142 @@
+.requirements {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    max-width: 500px;  
+  }
+
+  ul {
+    margin-top: 4rem;
+  }
+}
+
+.methodology {  
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  ul {
+    margin-top: 4rem;
+  }
+}
+
+.requirements { 
+  .contentTitle, .methodology .contentTitle {
+    margin-bottom: 4rem;
+  }
+}  
+
+.topicsList {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+
+  li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+  
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    column-gap: 10px;
+    align-items: center;
+    color: #000;
+
+    & + li {
+      margin-bottom: 1rem;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: #3754E2;
+      width: 10px;
+      height: 1px;
+    }
+  }
+}
+
+.modules {
+  padding-bottom: 8rem;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+
+    .contentTitle {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      color: #3754E2;
+  
+      &::after {
+        background-color: #3754E2;
+      }
+    }
+  
+    .contentText {
+      max-width: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    li {
+      font-size: 2rem;
+      font-weight: 500;
+      border-bottom: none;
+      max-width: 450px;
+
+      b {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+
+  .afBtn {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .requirements img {
+    display: none;
+  }
+
+  .modules .content {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-bottom: 4rem;
+  }
+
+  .topics-list li {
+    align-items: start;
+  }
+
+  .topics-list li + li{
+    margin-top: 2rem;
+  }
+
+  .topics-list li::before {
+    margin-top: 12px;
+  }
+}
