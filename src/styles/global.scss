@@ -60,6 +60,12 @@ a {
   margin-left: auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem !important;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;

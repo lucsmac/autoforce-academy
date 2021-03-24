@@ -88,13 +88,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  .banner .logos img {
-    padding-right: 1rem;
-    max-width: 100px;
-  }
+  .banner {
+    .bannerContent {
+      h1 {
+        font-size: 5rem;
+      }
 
-  .banner .logos img + img {
-    padding-left: 1rem;
+      .logos img {
+        padding-right: 1rem;
+        max-width: 100px;
+  
+        & + img {
+          padding-left: 1rem;
+        }
+      }
+    }
   }
   
   .bannerContent.container {
@@ -110,12 +118,13 @@
     display: none;
   }
 
-  .bannerWrapper, .bannerWrapper img {
-    height: 500px;
-  }
-
-  .bannerContent h1 {
-    font-size: 5rem;
+  .banner {
+    .bannerWrapper {
+      height: 500px;
+      img {
+        height: 500px;
+      } 
+    }
   }
 
   .bannerContent h2 {

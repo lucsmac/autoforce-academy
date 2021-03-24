@@ -112,16 +112,32 @@
 }
 
 @media screen and (max-width: 768px) {
-  .requirements img {
-    display: none;
+  .requirements {
+    margin-top: 8rem;
+    
+    img {
+      display: none;
+    }
   }
 
-  .modules .content {
-    grid-template-columns: 1fr;
+  .methodology {
+    margin-top: 4rem;
   }
+
+  .modules {
+    margin-top: 4rem;
+    
+    .content {
+      grid-template-columns: 1fr;
+    }
+  } 
 
   .subscribe {
     flex-direction: column;
+
+    img {
+      margin: 4rem 0 8rem;
+    }
   }
 
   .content {

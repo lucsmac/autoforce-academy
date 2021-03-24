@@ -112,12 +112,12 @@
     flex-direction: column;
   }
 
-  .institutionalFirst img {
-    margin: 0;
-  }
-
   .institutionalFirst {
     padding-bottom: 0;
+    
+    img {
+      margin: 4rem 0;
+    }
   }
 
   .videoAfa {
@@ -135,7 +135,7 @@
   .institutionalSecond {
     position: relative; 
     
-    .custom-student {
+    .customStudent {
       width: 45%;
       margin: 0;
       position: absolute;
