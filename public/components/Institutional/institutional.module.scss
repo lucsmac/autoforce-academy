@@ -1,0 +1,196 @@
+.institutionalFirst, .aboutAutoforce, .institutionalSecond {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.institutionalFirst {
+  flex-direction: column;
+}
+
+.videoAfa {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.videoAfa video {
+  width: 100%;
+  cursor: pointer;
+}
+
+.videoAfa .playButton {
+  position: absolute;
+  background-color: #F6B419;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.videoAfa .playButton::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.videoAfa .playButton.paused {
+  display: none;
+}
+
+.contentTitle {
+  max-width: 300px;
+  font-size: 4rem;
+  color: #3754E2;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 700;
+}
+
+.contentTitle b {
+  font-weight: 500;
+}
+
+.contentTitle:after {
+  content: '';
+  width: 50px;
+  height: 7px;
+  display: block;
+  background-color: #3754E2;
+  margin-top: 2rem;
+}
+
+.contentText {
+  font-weight: 300;
+  color: #000;
+  padding-top: 3rem;
+  max-width: 400px;
+  font-size: 2rem;
+}
+
+.institutionalFirst {
+  padding: 6rem 0;
+  
+  img {
+    margin-left: 6rem;
+  }
+}
+
+.institutionalSecond {
+  padding: 6rem 0 0;
+}
+
+.institutionalSecond .customStudent {
+  width: 40%;
+  margin-left: 6rem;
+  position: relative;
+  background-color: #3754E2;
+  padding-top: 8rem;
+}
+
+.institutionalSecond.container::before, .institutionalSecond.container::after {
+  display: none;
+}
+
+.institutionalSecond .customStudent img {
+  position: absolute;
+  left: -107px;
+  bottom: 0;
+  max-width: 450px;
+}
+
+.valuesAutoforce {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.valuesAutoforce ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.valuesAutoforce li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+.valuesAutoforce li span {
+  color: #3764E2;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .institutionalFirst, .institutionalSecond, .aboutAutoforce {
+    flex-direction: column;
+  }
+
+  .institutionalFirst img {
+    margin: 0;
+  }
+
+  .institutionalFirst {
+    padding-bottom: 0;
+  }
+
+  .videoAfa {
+    padding: 4rem 0;
+  }
+
+  .videoAfa .playButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .videoAfa .playButton::after {
+    border-width: 10px 0 10px 15px;
+  }
+
+  .institutionalSecond .custom-student {
+    width: 45%;
+    margin: 0;
+    position: absolute;
+    padding-top: 40rem;
+    right: -50px;
+    bottom: 0;
+  }
+
+  .institutionalSecond {
+    position: relative;
+  }
+
+  .institutionalSecond .customStudent img {
+    max-width: 260px;
+    padding-top: 40rem;
+    bottom: 0;
+    left: -35px;
+  }
+
+  .valuesAutoforce ul {
+    max-width: 60%;
+  }
+
+  .aboutAutoforce__content .contentText {
+    padding-bottom: 4rem;
+  }
+}
