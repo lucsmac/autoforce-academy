@@ -1,0 +1,48 @@
+.aboutTheProgram {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+  }
+
+  ul li h3 {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 700;
+    border-bottom: none;
+    text-transform: lowercase
+  }
+
+  ul li h3::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    display: block;
+    background-color: #FFF;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ul li p {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 300;
+    border-bottom: none;
+    text-transform: inherit;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 5rem 0;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      column-gap: 4rem;
+    }
+  }
+}
