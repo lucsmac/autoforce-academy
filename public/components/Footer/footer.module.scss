@@ -1,0 +1,65 @@
+.footer {
+  background-color: #3754E2;
+  padding: 10rem 0;
+  color: #FFF;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contentTitle {
+    font-size: 3rem;
+    color: #FFF;
+    margin-bottom: 4rem;
+  }
+
+  .contentTitle::after {
+    background-color: #FFF;
+  }
+
+  .contentText {
+    color: #FFF;
+    max-width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: none;
+    max-width: 450px;
+  }
+
+  ul li b {
+    margin-right: 7px;
+  }
+
+  .footerBottom {
+      .contentTitle {
+      max-width: 75%;
+      line-height: 1.2;
+      margin-bottom: 0;
+      font-size: 4rem;
+    }
+    
+    .knowMoreBtn a {
+      display: inline-block !important;
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .footerBottom .contentTitle {
+      max-width: 100%;
+    }
+  }
+}

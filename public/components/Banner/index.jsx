@@ -17,7 +17,7 @@ export function Banner() {
           <h1>AutoForce <br /> Academy</h1>
         </div>
         <p className={styles.subtitle}>Formação de desenvolvedores full-stack</p>
-        <div className={styles.afBtn}>
+        <div className="afBtn">
           <a href="https://portal.kenoby.com/autoforce/cadastrar/604a7d73de8588149f1d496b?1=1&utm_source=website">Quero participar</a>
         </div>
       </div>

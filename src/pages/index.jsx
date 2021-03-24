@@ -1,7 +1,9 @@
 import { AboutTheProgram } from '../../public/components/AboutTheProgram'
 import { Banner } from '../../public/components/Banner'
 import { Categories } from '../../public/components/categories'
+import { Footer } from '../../public/components/Footer'
 import { Institutional } from '../../public/components/Institutional'
+import { ProgramInfos } from '../../public/components/ProgramInfos'
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Institutional />
       <Categories />
       <AboutTheProgram />
+      <ProgramInfos />
+      <Footer />
     </div>
   )
 }
