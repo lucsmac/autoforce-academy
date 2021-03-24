@@ -13,40 +13,40 @@
   display: flex;
   justify-content: center;
   position: relative;
-}
+  
+  video {
+    width: 100%;
+    cursor: pointer;
+  }
 
-.videoAfa video {
-  width: 100%;
-  cursor: pointer;
-}
+  .playButton {
+    position: absolute;
+    background-color: #F6B419;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
 
-.videoAfa .playButton {
-  position: absolute;
-  background-color: #F6B419;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.videoAfa .playButton::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 20px 0 20px 30px;
-  border-color: transparent transparent transparent #ffffff;
-}
-
-.videoAfa .playButton.paused {
-  display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 30px;
+      border-color: transparent transparent transparent #ffffff;
+    }
+   
+    &.paused {
+      display: none;
+    }
+  }
 }
 
 .institutionalFirst {
@@ -122,35 +122,34 @@
 
   .videoAfa {
     padding: 4rem 0;
+    
+    .playButton {
+      width: 50px;
+      height: 50px;
+      
+      &::after {
+        border-width: 10px 0 10px 15px;
+      }
+    }
   }
-
-  .videoAfa .playButton {
-    width: 50px;
-    height: 50px;
-  }
-
-  .videoAfa .playButton::after {
-    border-width: 10px 0 10px 15px;
-  }
-
-  .institutionalSecond .custom-student {
-    width: 45%;
-    margin: 0;
-    position: absolute;
-    padding-top: 40rem;
-    right: -50px;
-    bottom: 0;
-  }
-
   .institutionalSecond {
-    position: relative;
-  }
+    position: relative; 
+    
+    .custom-student {
+      width: 45%;
+      margin: 0;
+      position: absolute;
+      padding-top: 40rem;
+      right: -50px;
+      bottom: 0;
 
-  .institutionalSecond .customStudent img {
-    max-width: 260px;
-    padding-top: 40rem;
-    bottom: 0;
-    left: -35px;
+      img {
+        max-width: 260px;
+        padding-top: 40rem;
+        bottom: 0;
+        left: -35px;
+      }
+    }
   }
 
   .valuesAutoforce ul {

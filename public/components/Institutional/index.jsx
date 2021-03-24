@@ -1,14 +1,35 @@
+import { useRef } from 'react'
 import styles from './institutional.module.scss'
 
 export function Institutional() {
+  const video = useRef(null)
+  const playBtn = useRef(null)
+
+  const playButton = () => {
+    if(video.current.paused){
+      video.current.play();
+      playBtn.current.classList.add('paused')
+    }
+  }
+
+  const videoToggle = () => {
+    if(!video.current.paused){
+      video.current.pause();
+      playBtn.current.classList.remove('paused')
+    } else {
+      video.current.play();
+      playBtn.current.classList.add('paused')
+    }
+  }
+
   return (
     <div>
       <div className={styles.institutionalFirst + ' container'}>
         <div className={styles.videoAfa}>
-          <video id="af-video">
+          <video ref={video} onClick={videoToggle}>
             <source src="/videos/autoforce-academy__cto.mp4" type="video/mp4" />Your browser does not support the video tag.
           </video>
-          <span className={styles.playButton}></span>
+          <span ref={playBtn} className={styles.playButton} onClick={playButton}></span>
         </div>
 
         <div className={styles.aboutAutoforce}>
