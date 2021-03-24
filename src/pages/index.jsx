@@ -1,13 +1,13 @@
 import { Banner } from '../../public/components/Banner'
+import { Categories } from '../../public/components/categories'
 import { Institutional } from '../../public/components/Institutional'
-
-import styles from '../styles/home.module.scss'
 
 export default function Home() {
   return (
-    <div className={styles.content}>
+    <div className="content">
       <Banner />
       <Institutional />
+      <Categories />
     </div>
   )
 }

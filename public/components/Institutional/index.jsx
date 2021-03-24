@@ -13,8 +13,8 @@ export function Institutional() {
 
         <div className={styles.aboutAutoforce}>
           <div className={styles.aboutAutoforce__content}>
-            <h2 className={styles.contentTitle}>Sobre a AutoForce:</h2>
-            <p className={styles.contentText}>A AutoForce é uma startup do tipo martech que desenvolve tecnologia e soluções de marketing digital para o segmento automotivo. Somos a 1ª empresa do ramo, no Brasil, especializada em compreender holisticamente a jornada de compra de veículos, modernizando o modelo de negócios das concessionárias, revendas e montadoras no país. Tudo isso com muita tecnologia, pesquisa e validação.</p>
+            <h2 className="contentTitle">Sobre a AutoForce:</h2>
+            <p className="contentText">A AutoForce é uma startup do tipo martech que desenvolve tecnologia e soluções de marketing digital para o segmento automotivo. Somos a 1ª empresa do ramo, no Brasil, especializada em compreender holisticamente a jornada de compra de veículos, modernizando o modelo de negócios das concessionárias, revendas e montadoras no país. Tudo isso com muita tecnologia, pesquisa e validação.</p>
           </div>
           <img src="/images/autoforce_inst.png" alt="AutoForce institucional" />
         </div>
@@ -23,12 +23,12 @@ export function Institutional() {
       <div className={styles.institutionalSecond + ' container'}>
         <div>
           <div className={styles.missionAutoforce}>
-            <h2 className={styles.contentTitle}>Nossa missão:</h2>
-            <p className={styles.contentText}>Promover a transformação digital no setor automotivo, por meio de tecnologias, processos e modelos de negócios que geram mais valor e inovação para os clientes.</p>
+            <h2 className="contentTitle">Nossa missão:</h2>
+            <p className="contentText">Promover a transformação digital no setor automotivo, por meio de tecnologias, processos e modelos de negócios que geram mais valor e inovação para os clientes.</p>
           </div>
 
           <div className={styles.valuesAutoforce}>
-            <h2 className={styles.contentTitle}>Nossos valores:</h2>
+            <h2 className="contentTitle">Nossos valores:</h2>
             <ul>
               <li><span>1.</span> Levamos o cliente ao pódio;</li>
               <li><span>2.</span> Inovamos para vencer;</li>
