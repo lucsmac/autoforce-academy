@@ -26,7 +26,7 @@ export function Institutional() {
     <div>
       <div className={styles.institutionalFirst + ' container'}>
         <div className={styles.videoAfa}>
-          <video ref={video} onClick={videoToggle}>
+          <video ref={video} onClick={videoToggle} playsInline>
             <source src="/videos/autoforce-academy__cto.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />Your browser does not support the video tag.
           </video>
           <span ref={playBtn} className={styles.playButton} onClick={playButton}></span>
